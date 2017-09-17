@@ -24,10 +24,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SolarSystemScene() as SolarSystemScene
         // Set the scene to the view
         sceneView.scene = scene
+        
+        // Create a node for the coordinate location
+        let node = SCNNode()
+        
+        node.position = SCNVector3(x: 0, y: 0.1, z: -0.5)
     }
     
     override func viewWillAppear(_ animated: Bool) {
