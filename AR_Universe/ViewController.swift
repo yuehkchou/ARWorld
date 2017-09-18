@@ -24,8 +24,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        let scene = SolarSystemScene() as SolarSystemScene
+        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        
+        // Create and add a camera to the Scene
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        scene.rootNode.addChildNode(cameraNode)
+        cameraNode.position = SCNVector3(x:0, y:0, z:45)
+        
+        // Create and add a light to the scene
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light!.type = SCNLight.LightType.omni
+        lightNode.position = SCNVector3(x:0, y:10, z:10)
+        scene.rootNode.addChildNode(lightNode)
         // Set the scene to the view
         sceneView.scene = scene
         
@@ -33,6 +45,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let node = SCNNode()
         
         node.position = SCNVector3(x: 0, y: 0.1, z: -0.5)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

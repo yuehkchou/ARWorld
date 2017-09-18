@@ -15,7 +15,8 @@
 		1AA7344E1F6EF52600B4CA1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA7344C1F6EF52600B4CA1F /* LaunchScreen.storyboard */; };
 		1AA734591F6EF52600B4CA1F /* AR_UniverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA734581F6EF52600B4CA1F /* AR_UniverseTests.swift */; };
 		1AA734641F6EF52600B4CA1F /* AR_UniverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA734631F6EF52600B4CA1F /* AR_UniverseUITests.swift */; };
-		1AA734721F6F0EA400B4CA1F /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA734711F6F0EA400B4CA1F /* SolarSystem.swift */; };
+		1AA734741F6F35F000B4CA1F /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA734731F6F35F000B4CA1F /* SolarSystem.swift */; };
+		1AA734761F6F545700B4CA1F /* SolarSystemAR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA734751F6F545700B4CA1F /* SolarSystemAR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		1AA7345F1F6EF52600B4CA1F /* AR_UniverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AR_UniverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AA734631F6EF52600B4CA1F /* AR_UniverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_UniverseUITests.swift; sourceTree = "<group>"; };
 		1AA734651F6EF52600B4CA1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AA734711F6F0EA400B4CA1F /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SolarSystem.swift; path = AR_Universe/SolarSystem.swift; sourceTree = "<group>"; };
+		1AA734731F6F35F000B4CA1F /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SolarSystem.swift; path = /Users/ykchou/Documents/AR_Universe/AR_Universe/SolarSystem.swift; sourceTree = "<absolute>"; };
+		1AA734751F6F545700B4CA1F /* SolarSystemAR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemAR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,6 @@
 		1AA734351F6EF52600B4CA1F = {
 			isa = PBXGroup;
 			children = (
-				1AA734711F6F0EA400B4CA1F /* SolarSystem.swift */,
 				1AA734401F6EF52600B4CA1F /* AR_Universe */,
 				1AA734571F6EF52600B4CA1F /* AR_UniverseTests */,
 				1AA734621F6EF52600B4CA1F /* AR_UniverseUITests */,
@@ -105,6 +106,8 @@
 				1AA734411F6EF52600B4CA1F /* AppDelegate.swift */,
 				1AA734431F6EF52600B4CA1F /* art.scnassets */,
 				1AA734451F6EF52600B4CA1F /* ViewController.swift */,
+				1AA734731F6F35F000B4CA1F /* SolarSystem.swift */,
+				1AA734751F6F545700B4CA1F /* SolarSystemAR.swift */,
 				1AA734471F6EF52600B4CA1F /* Main.storyboard */,
 				1AA7344A1F6EF52600B4CA1F /* Assets.xcassets */,
 				1AA7344C1F6EF52600B4CA1F /* LaunchScreen.storyboard */,
@@ -268,7 +271,8 @@
 			files = (
 				1AA734461F6EF52600B4CA1F /* ViewController.swift in Sources */,
 				1AA734421F6EF52600B4CA1F /* AppDelegate.swift in Sources */,
-				1AA734721F6F0EA400B4CA1F /* SolarSystem.swift in Sources */,
+				1AA734741F6F35F000B4CA1F /* SolarSystem.swift in Sources */,
+				1AA734761F6F545700B4CA1F /* SolarSystemAR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
